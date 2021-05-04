@@ -1,0 +1,45 @@
+.viewReviewContainer {
+    display: grid;
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+}
+
+.viewReviewCard {
+    display: grid;
+    width: 100%;
+    height: 75vh;
+    margin:0px auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.viewReviewHeader {
+    margin: 5px 0px;
+    align-self: center;
+}
+
+.viewPageImage {
+    display: block;
+}
+
+.viewReviewCard a {
+    text-decoration: none;
+    color: white;
+}
+
+.viewReviewCard button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 5px 0px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.viewReviewCard button:hover {
+    background-color: white;
+    color: black;
+}

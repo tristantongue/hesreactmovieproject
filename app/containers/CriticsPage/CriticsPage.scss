@@ -1,0 +1,20 @@
+.criticsPageContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    background-color: grey;
+}
+
+.criticsHeader {
+    background-color: grey;
+    text-align: center;
+}
+
+.criticsHeader h2 {
+    margin: 0px 0px;
+    padding: 10px 10px;
+}

@@ -1,0 +1,44 @@
+.cardContainer {
+    display: grid;
+    grid-template-rows: auto auto;
+    width: fit-content;
+    min-width: none;
+    min-height: 40vh;
+    max-height: 40vh;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 3px;
+    justify-self: center;
+    color: white;
+    transition: .5s;
+}
+
+.cardContainer:hover {
+    background-color: white;
+    color: black;
+}
+.cardContainer a {
+    text-decoration: none;
+    color: skyblue;
+}
+.cardImage {
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: center;
+}
+
+.cardContainer h3 {
+    margin: 0;
+    height: fit-content;
+}
+
+.cardContainer p {
+    margin: 0;
+    height: fit-content;
+}
+
+.tomato {
+    max-width: 20px;
+}

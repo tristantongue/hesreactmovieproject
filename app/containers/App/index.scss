@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.app-wrapper {
+    display: grid;
+    position: relative;
+}
+
+.navigation {
+    width: 100%;
+    background-color: black;
+    height: 20vh;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    grid-column: 4;
+    padding: 10px;
+    display: block;
+    height: fit-content;
+    align-self: center;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 5px;
+    transition: .5s;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: black;
+}
+
+.headerLogo {
+    grid-column: 1;
+    grid-row: span 2;
+    align-self: center;
+}
+
+.mainContent {
+    display: grid;
+    top: 20vh;
+    position: relative;
+    background-color: grey;
+}
