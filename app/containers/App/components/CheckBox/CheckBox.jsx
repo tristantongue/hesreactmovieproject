@@ -25,8 +25,6 @@ const ratings = [
 
 function CheckBox(props) {
 
-    console.log('hello checkbox props',props.filterschecked)
-
 
     return (
         <div>

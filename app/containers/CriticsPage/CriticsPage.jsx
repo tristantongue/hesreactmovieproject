@@ -22,7 +22,7 @@ export function CriticsPage(props) {
       },[])
 
     function createReviewCounts() {
-        console.log('reviews list is', props.reviews)
+
         const tempList = []
         for(let review of props.reviews) {
             if(!tempList.filter(item => item.name === review.byline.toLowerCase()).length > 0) {
@@ -36,7 +36,7 @@ export function CriticsPage(props) {
             }
         }
         tempList.sort((a,b) => (a.count > b.count) ? -1: 1)
-        console.log('reviewcounts', tempList)
+
         setCritics(tempList)
     }
 

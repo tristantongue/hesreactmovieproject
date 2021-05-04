@@ -73,7 +73,6 @@ export function HomePage(props) {
 
   function handleSearchChange(ev) {
     setSearchTerm(ev.target.value)
-    console.log('new search term:', searchTerm)
   }
 
   function dynamicSearch() {
@@ -97,7 +96,6 @@ export function HomePage(props) {
 
    function handleToggle(value) {
     const currentIndex = checked.indexOf(value)
-    console.log('current index is:', currentIndex)
     const newChecked = [...checked]
 
     if(currentIndex === -1) {
@@ -105,7 +103,6 @@ export function HomePage(props) {
     } else {
         newChecked.splice(currentIndex, 1)
     }
-    console.log('newchecked variable is:',newChecked)
     setChecked(newChecked)
     handleFilters(newChecked)
   }
@@ -113,10 +110,7 @@ export function HomePage(props) {
 
   const data = props.reviews
   
-  console.log('homepage props:', props.location)
-  console.log('state results are',filteredResults)
-  console.log('state filters: checked values ', checked)
-  console.log('state filters:   ', statefilters)
+
   return (
     <div>
       <Helmet>
